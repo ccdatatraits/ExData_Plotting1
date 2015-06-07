@@ -1,8 +1,8 @@
 ## Reads the relevant data and creates PNG diagram for plot2
 
 # Read the function and retrieve the relevant data
-#source('readRelevantData.R')
-#readRelevantData()
+source('readRelevantData.R')
+readRelevantData()
 
 # With the read data (DF) plot the desired graph
 # pch is set to NA_integer_ so that no symbol is shown
