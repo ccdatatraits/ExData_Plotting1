@@ -16,5 +16,6 @@ readRelevantData <- function() {
     DF$Time <- paste(DF$Date, DF$Time)
     DF <- transform(DF, Time = strptime(Time, format = "%Y-%m-%d %H:%M:%S"))
     # Subsets and returns only the DF that has a Date column with the value of Date
+    # TODO: Parameterize this Date value using function param [dates = c("2007-02-01", "2007-02-02")]
     DF <<- subset(DF, Date == "2007-02-01" | Date == "2007-02-02")
 }
